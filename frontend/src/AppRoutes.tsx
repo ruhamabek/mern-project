@@ -2,7 +2,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import Layout from "./layouts/Layout";
 import HomePage from "./pages/HomePage";
 import AuthCallbackPage from "./pages/AuthCallbackPage";
-import UserProfilePAge from "./pages/UserProfilePAge";
+import UserProfilePage from "./pages/UserProfilePAge";
 
 const AppRoutes = () => {
   return (
@@ -20,7 +20,7 @@ const AppRoutes = () => {
         path="/user-profile"
         element={
           <Layout>
-            <UserProfilePAge />
+            <UserProfilePage />
           </Layout>
         }
       />
