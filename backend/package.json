@@ -13,7 +13,8 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
-    "mongodb": "^6.13.0",
+    "express-oauth2-jwt-bearer": "^1.6.0",
+    "mongodb": "^5.9.2",
     "mongoose": "^8.10.0"
   },
   "devDependencies": {
