@@ -2,19 +2,28 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import Layout from "./layouts/Layout";
 import HomePage from "./pages/HomePage";
 import AuthCallbackPage from "./pages/AuthCallbackPage";
+import UserProfilePAge from "./pages/UserProfilePAge";
+
 const AppRoutes = () => {
   return (
     <Routes>
       <Route
         path="/"
         element={
-          <Layout>
+          <Layout showHero>
             <HomePage />
           </Layout>
         }
       />
       <Route path="/auth-callback" element={<AuthCallbackPage />} />
-      <Route path="/Profile" element={<Layout>PROFILE</Layout>} />
+      <Route
+        path="/user-profile"
+        element={
+          <Layout>
+            <UserProfilePAge />
+          </Layout>
+        }
+      />
       <Route path="*" element={<Navigate to="/" />} />
     </Routes>
   );
